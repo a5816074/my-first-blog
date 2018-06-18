@@ -42,7 +42,7 @@ for i in range(N):
     patches.append(polygon)
 
 colors = 100*np.random.rand(len(patches))
-p = PatchCollection(patches, alpha=0.4)
+p = PatchCollection(patches, alpha=1.0)
 p.set_array(np.array(colors))
 ax.add_collection(p)
 fig.colorbar(p, ax=ax)
